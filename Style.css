@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Play:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black
+}
+
+
+header {
+    background-color: rgb(243, 228, 194);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px 20px; /* Agregué un poco de padding para mejor apariencia */
+}
+
+header ul{
+    list-style:none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    
+    }
+    
+    header ul li{
+        margin: 15px;
+       
+    }
+
+    header ul li a {
+        text-decoration: none; 
+        color: inherit; 
+        font-size: 16px;
+    }
+
+    @media screen and (max-width: 768px) {
+        header {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        header ul {
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+        }
+        
+        header ul li {
+            margin: 10px 0;
+        }
+        
+        .menu-toggle {
+            display: block;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+    
+        header.active ul {
+            display: flex; 
+        }
+    }
+    
+    
+    .menu-toggle {
+        display: none; 
+    }
+    
+    
+header h1 {
+    font-size: 30px;
+    color:rgb(0, 0, 0);
+    font-family: "Orbitron", sans-serif;
+    text-align: center; 
+   
+}
+
+
+menu label {
+    cursor: pointer;
+}
+
+
+
+img, .container {
+    margin: 0;
+    padding: 0;
+    opacity: 100%;
+
+}
+
+
+.contenedor {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-around; /* Espacia los elementos de manera uniforme */
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben en una fila */
+    
+}
+
+
+img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: flex; /* Elimina el pequeño espacio inferior */
+    opacity: 0.8;
+    background-color: black;
+}
+
+.container-grilla {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    color: rgb(243, 228, 194);
+}
+
+.grilla-item {
+    border: 1px solid #948888;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.grilla-item h2 {
+    font-size: 24px;
+    color: rgb(156, 147, 126);
+}
+
+.grilla-item p {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .container-grilla {
+        grid-template-columns: 1fr;
+    }
+}
+    
+
+.servicios {
+    font-size: 20px;
+    color:rgb(0, 0, 0);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center; 
+    margin: 0 auto;
+    margin: 20px auto 0 auto;
+    width: fit-content; 
+}
+
+.info{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center; 
+    margin: 0 auto;
+    margin: 20px auto 0 auto;
+    width: fit-content; 
+    margin-top: -200px;
+  
+}
+
+.info2{
+    font-size: 9px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0 auto;
+    margin: 20px auto 0 auto;
+    width: fit-content; 
+    
+  
+
+}
+
+.info2 h3 {
+    font-size: 20px !important; 
+}
+
+.info p {
+    font-size: 17px !important; 
+}
+
+
+.imgservicios{
+    width: 50%;
+    margin: 0 auto;
+    margin: 20px auto 0 auto;
+    width: fit-content; 
+
+}
+
+.contenedor-servicios {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f8f8f8; 
+}
+
+.noticias {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff; 
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center; 
+}
+
+.noticias h1 {
+    font-size: 20px;
+    color: #090909; 
+    margin-bottom: 15px;
+}
+
+.noticias p {
+    font-size: 15px;
+    color: #555; 
+    margin-bottom: 15px;
+}
+
+
+
+@media (max-width: 768px) {
+    .contenedor-servicios {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .noticias {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+footer {
+    background-color: rgb(243, 228, 194);
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footer-section p, 
+.footer-section ul, 
+.footer-section li {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: rgb(22, 22, 22);
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #fcf5f5;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.contenedor-catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+.item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: calc(25% - 20px); /* Ajusta el ancho de cada elemento considerando el gap */
+    margin: 10px 0; /* Ajusta los márgenes entre filas */
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.item p.precio {
+    font-size: 14px;
+    font-weight: bold;
+    color: #c08e2f;
+}
+
+.categorias {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.categoria {
+    text-align: center;
+    flex-basis: calc(33.333% - 40px);
+}
+
+.categoria img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.categoria img:hover {
+    transform: scale(1.1);
+}
+
+.categoria p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+}
+
+.nosotross {
+    font-size: 14px;
+    position: relative;
+    top: -220px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+    margin-left: 32px;
+}
+
+.historia h1 {
+    font-size: 25px;
+    position: relative;
+    top: -220px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 32px;
+}
+
+@media (max-width: 768px) {
+    .nosotross {
+        font-size: 12px;
+        top: -100px; /* Ajustar este valor según lo necesario */
+        margin-left: 10px; /* Reducir margen en pantallas pequeñas */
+    }
+
+    .historia h1 {
+        font-size: 18px;
+        top: -100px; /* Ajustar este valor según lo necesario */
+        margin-left: 10px; /* Reducir margen en pantallas pequeñas */
+    }
+}
+
+
+.informacion {
+    text-align:left;
+    margin-left: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+
+.imagen-nosotros {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+    float: right;
+    margin-left: 10%; 
+    margin-top: -45%;
+    margin-right: 9%;
+    
+}
+
+.imagen-nosotros img {
+    width: 100%;  
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .imagen-nosotros {
+        float: none;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 20px; 
+        text-align: center; 
+    }
+
+    .imagen-nosotros img {
+        width: 90%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .imagen-nosotros {
+        margin-top: 10px;
+    }
+
+    .imagen-nosotros img {
+        width: 100%; 
+    }
+}
+
+
+.contactar h1{
+margin-left: 900px;
+margin-top: -400px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.contactar h2{
+    font-size: 25px;
+    margin-left: 850px;
+    margin-top: -10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .locales-seccion {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        margin-right: 50px; 
+    }
+    
+    .locales-seccion h2 {
+        font-size: 24px;
+        color: #000;
+        text-align: left;
+    }
+    
+    .titulo {
+        width: 50px;
+        margin-bottom: 20px;
+    }
+    
+    .locales-info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .locales {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .locales .icono img {
+        width: 20px;
+        height: auto;
+    }
+    
+    .locales .texto p {
+        margin: 0;
+        font-size: 14px;
+        color: #333;
+        line-height: 1.5;
+    }
+
+    @media screen and (max-width: 1200px) {
+        .contactar h1 {
+            margin-left: 50%;
+            transform: translateX(-50%);
+            margin-top: 10px;
+        }
+    
+        .contactar h2 {
+            margin-left: 50%;
+            transform: translateX(-50%);
+            margin-top: 10px;
+        }
+    }
+
+    .mapa-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; 
+        height: 0;
+        overflow: hidden;
+    }
+    
+    .mapa-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+   
+    .video-container {
+    width: 100%;
+    max-width: 800px; /* Puedes ajustar este valor según el diseño que prefieras */
+}
+
+.video-container iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Ajusta el aspecto del video */
+    max-width: 100%;
+    height: auto;
+}
+    
+    
+
+
+    
+   
